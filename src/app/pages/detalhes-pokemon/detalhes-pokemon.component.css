@@ -125,7 +125,7 @@ app-stats-bar {
         top: -60px;
         text-align: center;
         width: 100%;
-        margin: 0 1rem;
+        margin: 0 0.5rem;
         padding: 1rem;
     }
     h1 {
@@ -154,7 +154,4 @@ app-stats-bar {
         position: relative;
         top: 33px;
     }
-}
-
-@media (max-width: 768px) {
 }
