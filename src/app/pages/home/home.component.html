@@ -1,0 +1,37 @@
+
+<section class="section1">
+    <div class="busca">
+        <img class="logoDesktop" src="/assets/logo.png" alt="logo">
+        <h1>Explore o mundo dos<div style="color: #EA686D;">Pokémons</div></h1>
+        <p>Descubra espécies de Pokémons</p>
+        <div class="input">
+            <input type="text" [(ngModel)]="inputBusca">
+            <button class="botaoBusca" (click)="this.busca()">Buscar</button>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="/assets/pokeBanner1.png" class="bulbasaur">
+        <img src="/assets/pokeBanner2.png" class="squirtle">
+        <img src="/assets/pokeBanner3.png" class="pikachu">
+    </div>
+    <img class="logoMobile" src="/assets/logo.png" alt="logo">
+</section>
+<section class="section2">
+    <div class="pokedexNav">
+        <h2>Pokedex</h2>
+        <div class="navButtons">
+            <button class="botaoPag" (click)="this.mudarPaginaPokedex(this.prevPage)">{{prev}}</button>
+            <button class="botaoPag" (click)="this.mudarPaginaPokedex(this.nextPage)">{{next}}</button>
+        </div>
+    </div>
+    <div class="pokedex" >
+        <pokemon-card *ngFor="let pokemon of pokemons"
+        [name]="pokemon.name"
+        [height]="pokemon.height"
+        [weigth]="pokemon.weight"
+        [imgUrl]="pokemon.imgBasic"
+        [id]="pokemon.id"
+        (click)="detalhesPokemon(pokemon.id)"
+        ></pokemon-card>
+    </div>
+</section>

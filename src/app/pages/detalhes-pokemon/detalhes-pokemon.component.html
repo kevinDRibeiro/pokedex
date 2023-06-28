@@ -1,0 +1,47 @@
+<section>
+    <div class="detalhes">
+
+        <img class="logo" src="/assets/logo.png" alt="logo" (click)="home()">
+
+        <h1>{{pokemon.name | titlecase}}</h1>
+
+        <div class="textoParalelo">
+            <p class="subTitle">{{'Cod: #' + pokemon.id}}</p>
+            <p class="subTitle">Tipo: <app-tipo-pokemon [tipo]="pokemon.type"></app-tipo-pokemon></p>
+        </div>
+
+        <div class="imagemMobile">
+            <div class="circle"></div>
+            <img class="pokemonMobile" [src]="pokemon.imgBasic" [alt]="pokemon.name">
+        </div>
+
+        <h2>Descrição</h2>
+        <p>{{'"' + pokemon.description + '"'}}</p>
+
+        <h2>Informações</h2>
+        <div class="textoParalelo">
+            <h4>Altura:</h4> <h4>{{pokemon.height + ' M'}}</h4>
+        </div>
+
+        <div class="textoParalelo">
+            <h4>Peso:</h4> <h4>{{pokemon.weight + ' Kg'}}</h4>
+        </div>
+
+        <div class="textoAoLado">
+            <p>Vida</p> <app-stats-bar [percentage]="pokemon.health" color="#C4F789"></app-stats-bar>
+        </div>
+        <div class="textoAoLado">
+            <p>Defesa</p> <app-stats-bar [percentage]="pokemon.defense" color="#F7802A"></app-stats-bar>
+        </div>
+        <div class="textoAoLado">
+            <p>Velocidade</p> <app-stats-bar [percentage]="pokemon.speed" color="#49D0B0"></app-stats-bar>
+        </div>
+        <div class="textoAoLado">
+            <p>Ataque</p> <app-stats-bar [percentage]="pokemon.atack" color="#EA686D"></app-stats-bar>
+        </div>
+    </div>
+    <div class="imagem">
+        <div class="circle"></div>
+        <img class="pokemon" [src]="pokemon.imgBasic" [alt]="pokemon.name">
+    </div>
+</section>

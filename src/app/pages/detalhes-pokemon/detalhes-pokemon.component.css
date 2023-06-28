@@ -1,0 +1,160 @@
+section {
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+h2 {
+    color: #233674;
+    font-size: 22px;
+    font-family: Nunito;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+h4 {
+    color: #233674;
+    font-size: 18px;
+    font-family: Nunito;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+p {
+    width: 20%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: #233674;
+    font-size: 16px;
+    font-family: Nunito;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+app-tipo-pokemon {
+    margin-left: 1rem;
+}
+
+.subTitle {
+    margin: 0;
+    color: #233674;
+    font-size: 22px;
+    font-family: Nunito;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.textoParalelo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+app-stats-bar {
+    margin-left: 2rem;
+}
+
+.textoAoLado {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detalhes {
+    width: 50%;
+    padding: 2rem 5% 5rem 5%;
+}
+
+.imagem {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemMobile {
+    display: none;
+}
+
+.pokemon {
+    position: fixed;
+    width: 380px;
+    height: 400px;
+}
+
+.pokemonMobile {
+    position: absolute;
+    width: 240px;
+    height: 250px;
+}
+
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 522px;
+    height: 522px;
+}
+
+
+@media (max-width: 992px) {
+    .imagem {
+        display: none;
+    }
+
+    .imagemMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .detalhes {
+        position: relative;
+        top: -60px;
+        text-align: center;
+        width: 100%;
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+    h1 {
+        color: #233674;
+        font-size: 25px;
+        font-family: Nunito;
+        font-weight: 700;
+        word-wrap: break-word
+    }
+    .subTitle {
+        color: #233674;
+        font-size: 18px;
+        font-family: Nunito;
+        font-weight: 400;
+        word-wrap: break-word;
+    }
+
+    p {
+        width: auto;
+    }
+    .textoAoLado {
+        justify-content: space-between;
+    }
+
+    .logo {
+        position: relative;
+        top: 33px;
+    }
+}
+
+@media (max-width: 768px) {
+}
