@@ -50,7 +50,6 @@ export class DetalhesPokemonComponent implements OnInit {
         this.pokemon.defense = res.stats[2].base_stat;
         this.pokemon.speed = res.stats[5].base_stat;
         this.pokemon.atack = res.stats[1].base_stat;
-        console.log(res, this.pokemon)
       },
       error: err => {
         this.router.navigate(['']);

@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['detalhes/' + res.id.toString()]);
       },
       error: err => {
-        console.log(err,'sucesso')
+        console.log(err)
       },
     });
   }
