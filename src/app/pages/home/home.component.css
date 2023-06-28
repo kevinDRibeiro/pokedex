@@ -1,6 +1,6 @@
 .section1 {
     display: flex;
-    margin: 0 3rem;
+    margin: 2rem 3rem  0 3rem;
 }
 
 .busca {
@@ -75,7 +75,7 @@ input {
 }
 
 .pikachu {
-    margin-bottom: 114px;
+    margin-bottom: 90px;
 }
 
 .section2 {
