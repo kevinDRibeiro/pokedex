@@ -1,27 +1,25 @@
-# IniciePokedexTeste
+# Projeto Pokedex Angular 14.0.5
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+## Objetivo
+O objetivo deste projeto é demonstrar experiência no consumo de APIs, utilizando a PokeAPI para obter dados sobre Pokémons.
 
-## Development server
+## Funcionalidades
+- Página inicial com barra de pesquisa e Pokedex mostrando Pokémons com paginação
+- Página de detalhes do Pokémon selecionado
+- Consumo da PokeAPI para obter dados sobre Pokémons
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estrutura do Projeto
+O projeto é dividido em quatro pastas principais dentro da pasta 'src':
+- `components`: contém três componentes pequenos e reutilizáveis que são usados em várias partes da aplicação
+- `services`: contém um serviço que consulta a PokeAPI para obter dados sobre Pokémons
+- `pages`: contém duas páginas, a página inicial (`home`) e a página de detalhes do Pokémon (`details`)
+- `model`: contém os modelos de todas as entidades utilizadas no projeto
 
-## Code scaffolding
+## Instalação e Execução
+Para instalar e executar a aplicação, é necessário ter o npm instalado. Primeiro, use o comando `npm install` para instalar as dependências do projeto. Em seguida, use o comando `ng serve` para iniciar a aplicação.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Exemplos de Uso
 
-## Build
+  ![image](https://github.com/kevinDRibeiro/pokedex/assets/79545839/839414b2-6a54-4756-a968-156247976083)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](https://github.com/kevinDRibeiro/pokedex/assets/79545839/1a3b3348-56a2-4416-bda0-44dfbd4663e2)
