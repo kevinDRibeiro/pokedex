@@ -9,7 +9,7 @@ O objetivo deste projeto é demonstrar experiência no consumo de APIs, utilizan
 - Consumo da PokeAPI para obter dados sobre Pokémons
 
 ## Estrutura do Projeto
-O projeto é dividido em quatro pastas principais dentro da pasta 'src':
+O projeto é dividido em quatro pastas principais dentro da pasta 'app':
 - `components`: contém três componentes pequenos e reutilizáveis que são usados em várias partes da aplicação
 - `services`: contém um serviço que consulta a PokeAPI para obter dados sobre Pokémons
 - `pages`: contém duas páginas, a página inicial (`home`) e a página de detalhes do Pokémon (`detalhes`)
